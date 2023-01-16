@@ -2,8 +2,8 @@ import java.util.*;
 
 public class FractionalKnapsack {
     public static void main(String[] args) {
-        int weight[] = {10, 20, 30};
-        int val[] = {60, 100, 120};
+        int weight[] = {10, 20};
+        int val[] = {60, 100};
         int W = 50;
 
         double ratio[][] = new double[weight.length][2];
