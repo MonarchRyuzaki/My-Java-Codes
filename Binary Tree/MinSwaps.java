@@ -37,12 +37,12 @@ public class MinSwaps {
             
             if (inorder.get(i) != temp[i]){
                 ans++;
-                int tem = inorder.get(i);
+                int t = inorder.get(i);
 
                 swap(inorder,i,map.get(temp[i]));
 
 
-                map.put(tem,map.get(temp[i]));
+                map.put(t,map.get(temp[i]));
                 map.put(temp[i],i);
                 
 
