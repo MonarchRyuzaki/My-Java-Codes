@@ -70,7 +70,7 @@ public class DijkstraAlgorithm {
                     int u = e.src;
                     int v = e.dest;
                     int wt = e.wt;
-                    if ((dist[u] + wt )< dist[v]){
+                    if (dist[u]!= Integer.MAX_VALUE && (dist[u] + wt )< dist[v]){
                         dist[v] = dist[u] + wt;
                         pq.add(new Pair(v, dist[v]));
                     }
