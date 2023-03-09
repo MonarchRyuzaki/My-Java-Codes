@@ -51,6 +51,7 @@ public class CycleDetectionDirected {
                 return true;
             }
         }
+        stack[curr] = false;
         return false;
     }
     public static void main(String[] args) {

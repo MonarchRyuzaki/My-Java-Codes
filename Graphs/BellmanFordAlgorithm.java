@@ -50,7 +50,7 @@ public class BellmanFordAlgorithm {
                     int u = e.src;
                     int v = e.dest;
                     int wt = e.wt;
-                    if (dist[u] != Integer.MAX_VALUE && dist[u] + wt < dist[v]){
+                    if (dist[u] != Integer.MAX_VALUE && dist[u] + wt < dist[v]){   //dist[u] != Integer.MAX_VALUE - > Try Removing this condition if not working
                         dist[v] = dist[u]+wt;
                     }
                 }
